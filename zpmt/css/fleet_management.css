@@ -1,0 +1,53 @@
+.grid_container{
+  display: grid;
+  margin-top: 5px;
+  word-break: break-word;
+}
+.grid_item{
+  outline: 2px solid black;
+  margin-top: 10px;
+  margin-left: 1px;
+  padding: 5px;
+}
+
+/* fleet add */
+#box_scan{
+  grid-column: 1 ;
+  grid-row: 1;
+}
+#box_single{
+  grid-column: 1 ;
+  grid-row: 2;
+}
+#box_file{
+  grid-column: 1 ;
+  grid-row: 3;
+}
+
+/* fleet delete */
+#box_delete{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+/* generic */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th{
+  padding: 8px;
+  border: 1px solid black;
+}
+td{
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+a{
+  color: black;
+  font-weight: bold;
+}
+h2{
+  text-align: center;
+}

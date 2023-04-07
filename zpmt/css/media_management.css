@@ -1,0 +1,125 @@
+.grid_container{
+  display: grid;
+  margin-top: 5px;
+  word-break: break-word;
+  grid-template-columns: 1fr 1fr;
+}
+.grid_item{
+  outline: 1px solid black;
+  margin-top: 10px;
+  margin-left: 1px;
+  padding: 5px;
+}
+
+/* media management */
+#box_media_insert{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1 / span 2;
+  outline: 2px solid black;
+  word-break: break-word;
+}
+#box_media_insert_title{
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  outline: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+#box_media_paper_insert{
+  grid-column: 1;
+  grid-row: 2;
+}
+#box_media_ribbon_insert{
+  grid-column: 2;
+  grid-row: 2;
+}
+#box_media_lists{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  outline: 2px solid black;
+  word-break: break-word;
+}
+#box_media_manag_title{
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  outline: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+#box_paper_list{
+  grid-column: 1;
+  grid-row: 2;
+}
+#box_ribbon_list{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+/* paper and ribbon assignment */
+.grid_container_assignment{
+  display: grid;
+  margin-top: 5px;
+  word-break: break-word;
+  grid-template-columns: 75% 25%;
+}
+#box_printer_list{
+  grid-column: 1;
+  grid-row: 1;
+  outline: 2px solid black;
+}
+#box_media_selection{
+  grid-column: 2;
+  grid-row: 1;
+  outline: 2px solid black;
+}
+.button_associations{
+  background-color: #66b3ff;
+  border: 1px black solid;
+  padding: 2px 2px;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  margin: 2px 2px;
+}
+
+/* media details */
+#box_edit_media_details{
+  grid-column: 1;
+  grid-row: 1;
+  outline: 2px solid black;
+}
+#box_edit_media_quantity{
+  grid-column: 2;
+  grid-row: 1;
+  outline: 2px solid black;
+}
+#box_associated_printers{
+  grid-column: 1 / span 2;
+  grid-row: 2;
+  outline: 2px solid black;
+}
+
+/* generic */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th{
+  padding: 4px;
+  border: 1px solid black;
+}
+td{
+  padding: 4px;
+  border-bottom: 1px solid black;
+}
+a{
+  color: black;
+  font-weight: bold;
+}
+h2, h3{
+  text-align: center;
+}

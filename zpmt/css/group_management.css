@@ -1,0 +1,72 @@
+.grid_container{
+  display: grid;
+  margin-top: 5px;
+  word-break: break-word;
+}
+.grid_item{
+  outline: 2px solid black;
+  margin-top: 10px;
+  margin-left: 1px;
+  padding: 5px;
+}
+
+/* groups management */
+#box_create_group{
+  grid-column: 1;
+  grid-row: 1;
+}
+#box_manage_group{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* groups assignment */
+#box_printer_list{
+  grid-column: 1;
+  grid-row: 1;
+}
+#box_group_selection{
+  grid-column: 2;
+  grid-row: 1;
+}
+
+/* group details */
+#box_group_details_edit{
+  grid-column: 1;
+  grid-row: 1;
+}
+#box_group_details_printer_list{
+  grid-column: 1;
+  grid-row: 2;
+}
+
+/* generic */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th{
+  padding: 8px;
+  border: 1px solid black;
+}
+td{
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+a{
+  color: black;
+  font-weight: bold;
+}
+h2, h3{
+  text-align: center;
+}
+.button_associations{
+  background-color: #66b3ff;
+  border: 1px black solid;
+  padding: 2px 2px;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  margin: 2px 2px;
+}

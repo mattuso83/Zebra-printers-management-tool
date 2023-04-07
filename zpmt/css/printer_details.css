@@ -1,0 +1,213 @@
+ul.printer_menu{
+  background-color: #d9d9d9;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+}
+.tabcontent {
+  display: none;
+  flex: 50%;
+}
+.grid_container_main{
+  display: grid;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  grid-template-columns: 50px auto;
+  word-break: break-word;
+}
+.grid_container{
+  display: grid;
+  margin-top: 5px;
+  outline: 2px solid black;
+  grid-template-columns: 1fr 1fr;
+  word-break: break-word;
+}
+.grid_item{
+  outline: 1px solid black;
+  padding: 5px;
+}
+
+/* page layout */
+/* tab selection on top left corner */
+#box_printer_tabs{
+  margin-top: 10px;
+  margin-right: 5px;
+  grid-column: 1 ;
+  grid-row: 1;
+}
+/* main box */
+#box_data{
+  grid-column: 2 ;
+  grid-row: 1;
+  margin-right: 10px;
+}
+
+/* Info panel */
+#box_general_info{
+  grid-column: 1 ;
+  grid-row: 1;
+}
+#box_info_logs{
+  grid-column: 1 ;
+  grid-row: 2;
+}
+#box_info_odometer{
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+#box_info_filelist{
+  grid-column: 1;
+  grid-row: 3;
+}
+#box_info_view_file{
+  grid-column: 2;
+  grid-row: 3;
+}
+.button_associations{
+  background-color: #66b3ff;
+  border: 1px black solid;
+  padding: 2px 2px;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  margin: 2px 2px;
+}
+p.filetype{
+  text-align: center;
+  text-decoration: underline;
+}
+td.odometers{
+  width: 15%;
+}
+td.filelist{
+  font-size: 9px;
+  padding: 1px;
+  margin: 0px;
+}
+button.file_actions{
+  padding: 0px;
+}
+iframe#all_files{
+  width: 100%;
+  height: 400px;
+}
+
+/* Configuration panel */
+#box_configuration_printing{
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+#box_configuration_device{
+  grid-column: 2;
+  grid-row: 1;
+}
+#box_configuration_power{
+  grid-column: 2;
+  grid-row: 2;
+}
+#box_save_configuration_profile{
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+td.option , td.current{
+  padding: 8px;
+  width: 25%;
+}
+
+/* Connectivity panel */
+#box_connectivity_info{
+  grid-column: 1;
+  grid-row: 1;
+}
+#box_connectivity_bt{
+  grid-column: 2;
+  grid-row: 1;
+}
+#box_connectivity_other{
+  grid-column: 1;
+  grid-row: 2;
+}
+#box_connectivity_serial{
+  grid-column: 2;
+  grid-row: 2;
+}
+#box_save_connectivity_profile{
+  grid-column: 1 / span 2;
+  grid-row: 3;
+}
+
+/* Troubleshooting panel */
+
+#box_troubleshooting_options{
+  grid-column: 1 ;
+  grid-row: 1;
+}
+#box_troubleshooting_allcv{
+  grid-column: 1;
+  grid-row: 2;
+  height: 200px;
+  overflow-y: scroll;
+}
+#box_troubleshooting_send_commands{
+  grid-column: 2;
+  grid-row: 1 / span 2;
+}
+#box_troubleshooting_input_capture_filelist{
+  grid-column: 1;
+  grid-row: 3;
+  height: 270px;
+  overflow-y: scroll;
+}
+#box_troubleshooting_input_capture_content{
+  grid-column: 2;
+  grid-row: 3;
+}
+iframe#dmp_files{
+  width: 100%;
+  height: 100%;
+}
+.button_options {
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+textarea{
+  width: 100%;
+  height: 300px;
+  background-color: #c4c4c4;
+  resize: none;
+  padding-right: 0px;
+}
+
+/* generic */
+table{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th{
+  padding: 8px;
+  border: 1px solid black;
+}
+
+td{
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+a{
+  color: black;
+  font-weight: bold;
+}
+h2{
+  text-align: center;
+}
+input[type='number']{
+  width: 100px;
+} 

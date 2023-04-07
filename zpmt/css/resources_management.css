@@ -1,0 +1,116 @@
+.grid_container{
+  display: grid;
+  margin-top: 5px;
+  grid-template-columns: 1fr;
+  word-break: break-word;
+}
+.grid_item{
+  outline: 1px solid black;
+  margin-top: 10px;
+  margin-left: 1px;
+  padding: 5px;
+}
+
+/* resource management */
+#box_manag_resource_upload{
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  outline: 2px solid black;
+}
+#box_manag_file_lists{
+  display: grid;
+  outline: 2px solid black;
+  grid-template-columns: 1fr 1fr 1fr;
+  min-width: 0;
+  word-break: break-word;
+}
+#box_manag_list_title{
+  grid-column: 1 / span 3;
+  grid-row: 1;
+  outline: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+#box_manag_printer_config_list{
+  grid-column: 1;
+  grid-row: 2;
+}
+#box_manag_network_config_list{
+  grid-column: 2;
+  grid-row: 2;
+}
+#box_manag_firmware_list{
+  grid-column: 3;
+  grid-row: 2;
+}
+#box_manag_buttons{
+  grid-column: 1 / span 3;
+  grid-row: 3;
+  outline: 0px;
+}
+table#list{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+/* resources send */
+#box_send_type{
+  grid-column: 1;
+  grid-row: 1;
+  outline: 2px solid black;
+}
+#box_send{
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
+  outline: 2px solid black;
+}
+#box_send_filelist{
+  grid-column: 1;
+  grid-row: 2;
+  outline: 1px solid black;
+}
+#box_send_destination{
+  grid-column: 2;
+  grid-row: 2;
+  outline: 1px solid black;
+}
+#box_send_buttons{
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  outline: 0px;
+}
+
+/* resources details */
+#box_details_edit{
+  grid-column: 1;
+  grid-row: 1;
+  outline: 2px solid black;
+}
+#box_details_content{
+  grid-column: 1;
+  grid-row: 2;
+  outline: 2px solid black;
+}
+
+/* generic */
+table{
+  border-collapse: collapse;
+  text-align: left;
+}
+th{
+  padding: 8px;
+  border: 1px solid black;
+}
+td{
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+a{
+  color: black;
+  font-weight: bold;
+}
+h2, h3{
+  text-align: center;
+}

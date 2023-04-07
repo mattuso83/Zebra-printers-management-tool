@@ -1,0 +1,25 @@
+table{
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+th{
+  padding: 8px;
+  border: 1px solid black;
+}
+td{
+  padding: 8px;
+  border-bottom: 1px solid black;
+}
+td.title{
+  width: 15%;
+}
+td.date{
+  width: 12%;
+}
+a{
+  color: black;
+}
+h2{
+  text-align: center;
+}
