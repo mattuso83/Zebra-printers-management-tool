@@ -18,6 +18,7 @@ On a Linux computer, you'll need to use the crontab to create the task.
 
 INSTALLATION<br>
 The main folder contains the empty databse dump that can be imported into the MySQL instance, and the task_schedule_creator.php that can be opened in a browser to automatically create a Windows task to run the cron.php file every 60 minutes.
+Here you can find a detailed installation guide https://www.thezcorner.com/printers/managing-multiple-printers/printers-the-zebra-printer-management-tool
 
 DESCRIPTION<br>
 The homepage shows the list of printers. ![immagine](https://user-images.githubusercontent.com/67392171/230573497-a501696e-a35c-4e20-9469-856192187a63.png)
