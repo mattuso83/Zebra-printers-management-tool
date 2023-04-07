@@ -1,7 +1,7 @@
 # Zebra-printers-management-tool
 A web tool to manage Zebra label printers on a LAN
 
-INTRODUCTION
+INTRODUCTION<br>
 ZPMT is a web application developed in PHP which sits on a MySQL database that can be used to manage Zebra printers in a LAN. With ZPMT it is possible to scan a subnet (the same subnet where ZPMT is installed) to search for Zebra printers, add a single printer by IP or use a CSV file to load the IP addresses, a hostname and, in case, add automatically a printer to a pre-created group. Each printer can be assigned to a max of 10 groups and the groups can be used to separate the printers according to their physical location, their use or any other type of grouping rule.
 Once inserted into the inventory, the printers can also be assigned to a label type and a ribbon type in order to keep track of the usage of the label and ribbon rolls and, possibly, prevent supply issues. When the printer is online, it is possible to access to the printer detail page where it is shown the printer configuration and where you can edit or save its configuration as a resource which can then be sent to a group of printers. The resources also include firmware which can be uploaded and sent to the printers. 
 The tool also regularily check the battery and the printhead health and generates a notification if the battery health is below 80% or if at least a single printhead elements fails the health check.
@@ -11,15 +11,15 @@ REQUIREMENTS
 - PHP v. 8.0.17-0101 or above with the socket extension enabled.
 - MySQL v. 4.9.7-1032 or above
 
-The cron.php file
+The cron.php file<br>
 In order to keep up to date the media counter, create and execute the scheduled task to reset the odometer or to send resources to offline printers and to create warning notifications regarding the batteries and the printheads status, you can use the cron file which creates a Windows task schedule that runs every hour and works in the background. All these tasks are performed by the “cron.php” file, but the task scheduler can be automatically created using the “task_schedule_creator.php” which will create a Windows task that will run the cron.php file every 60 minutes. 
 Assuming you're using XAMPP on a Windows computer and the htdocs folder contained in XAMPP as main folder for the ZPMT files, what you've to do is just enter in your browser the following url http://localhost/task_schedule_creator.php 
 On a Linux computer, you'll need to use the crontab to create the task.
 
-INSTALLATION
+INSTALLATION<br>
 The main folder contains the empty databse dump that can be imported into the MySQL instance, and the task_schedule_creator.php that can be opened in a browser to automatically create a Windows task to run the cron.php file every 60 minutes.
 
-DESCRIPTION
+DESCRIPTION<br>
 The homepage shows the list of printers. ![immagine](https://user-images.githubusercontent.com/67392171/230573497-a501696e-a35c-4e20-9469-856192187a63.png)
 The background color changes according to the printer status: green if the printer is ready, yellow if the printer is in warning or pause status, red if the printer is in error and gray if the printer is offline. Cliking on the printer name will open the printer details page where the printer configuration and a troubleshooting tab will be shown. 
 The printer details page has 4 different self-explanatory tabs:
